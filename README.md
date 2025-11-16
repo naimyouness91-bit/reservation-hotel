@@ -1,70 +1,118 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🏨 HOTELIER – Projet React
+📌 Description
+HOTELIER est une application web développée avec React.js, conçue pour présenter un hôtel moderne avec ses chambres, ses services, son équipe, son slider principal et un système de réservation simple.
+L’objectif du projet est de créer une interface professionnelle, responsive et dynamique en utilisant des composants React organisés.
+🛠️ Technologies Utilisées
+--> React.js
+--> JavaScript ES6
+--> CSS3
+--> Bootstrap
+--> Animate.css
+--> FontAwesome
+--> React Hooks (useState, useEffect)
+📂 Structure du Projet
+src/
+|
+|___components/
+|    |___common/
+|    |    |___CommonHeading.jsx
+|    |    |___Footer.jsx
+|    |    |___Header.jsx
+|    |    |___Heading.jsx
+|    |    |___Socialcons.jsx
+|    |___data/
+|    |     |___Data.jsx
+|    |___home/
+|         |___About.js
+|         |___Book.js
+|         |___Carousel.js
+|         |___Home.js
+|         |___Newsletter.js
+|         |___Rooms.js
+|         |___Service.js
+|         |___Slider.js
+|         |___Team.js
+|___css/
+|    |___animate.css
+|    |___animate.min.css
+|    |___bootstrap.min.css
+|    |___style.css
+|___pages/
+|    |___AboutUs.js
+|    |___BookingPage.js
+|    |___ContactPage.js
+|    |___index.js
+|    |___PageNotFound.js
+|    |___RoomPage.js
+|    |___ServicesPage.js
+|    |___TeamPage.js
+|    |___TestimonialPage.js
+|___App.css
+|___App.js
+|___index.js
+|___.gitignore
+|___package-lock.json
+|___package.json
+|___README.md
+🎯 Fonctionnalités Principales
+🔹 1. Slider principal (Hero Section)
+--> Affichage d’images de l’hôtel en grand format
+--> Boutons ("Our Room" / "Book Room")
+🔹 2. Formulaire de réservation
+--> Check-in
+--> Check-out
+--> Adultes
+--> Enfants
+--> Bouton Submit
+🔹 3. Section About
+Présentation de l’hôtel + Statistiques (chambres, staff, clients…)
+🔹 4. Section Rooms
+Liste de chambres avec :
+--> Image
+--> Prix
+--> Étoiles
+--> Lit / Salle de bain
+--> Bouton “View Details” + “Book Now”
+🔹 5. Section Services
+Liste de 6 services (Fitness, Food & Restaurant, Event & Party…)
+🔹 6. Testimonials
+Slider contenant les avis des clients.
+🔹 7. Section Team
+Présentation de l’équipe de l’hôtel :
+--> Image
+--> Nom
+-->Fonction
+--> Réseaux sociaux
+🔹 8. Newsletter
+Formulaire d’abonnement à l’email.
+🔹 9. Footer
+Infos de contact + liens vers les pages.
+🧩 Composants Importants
+✔ Header.jsx
+Barre de navigation principale.
+✔ Slider.js
+Slider principal en haut.
+✔ Rooms.js
+Affichage des cartes des chambres.
+✔ Service.js
+Afficher les services avec icônes.
+✔ Team.js
+Cartes des membres du staff.
+✔ Footer.jsx
+Pied de page complet.
+👨‍💻 Travail Réalisé
+--> Intégration complète du design HOTELIER
+--> Construction des composants React
+--> Organisation du code dans /components/...
+--> Mise en place du slider et des animations
+-->Styling via CSS, Bootstrap, Animate.css
+--> Gestion des données statiques dans Data.jsx
+🧠 Compétences Acquises
+--> Architecture d’un projet React
+--> Réutilisation de composants
+--> Styles avancés (Bootstrap + CSS)
+--> Organisation modulaire
+--> Responsive design
+--> Utilisation d’animations CSS
+📝 Conclusion
+Ce projet m’a permis de développer une application web professionnelle représentant un hôtel moderne. L’utilisation de React a facilité la création de composants réutilisables et l’organisation du code d’une manière claire et maintenable.
